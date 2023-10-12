@@ -16,7 +16,7 @@ int main(void)
 		sum = fb1 + fb2;
 		printf("%lu", sum);
 
-		fb1 = fib2;
+		fb1 = fb2;
 		fb2 = sum;
 
 		if (count == 49)
