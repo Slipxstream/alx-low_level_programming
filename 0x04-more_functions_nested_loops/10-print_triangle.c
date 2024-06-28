@@ -2,11 +2,11 @@
 
 /**
  * print_triangle - entry point
- * 
+ *
  * Description: Print diagonal
- * 
+ *
  * @size: size of the triangle
- * 
+ *
  * Return: (0) false, (1) true
  */
 
