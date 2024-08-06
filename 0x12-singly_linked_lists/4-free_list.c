@@ -4,16 +4,20 @@
 
 /**
  * free_list - frees a list
- *
- * @head: pointer to first node 
+ * @head: pointer to first node
+ * Return: nothing
  */
 void free_list(list_t *head)
 {
-	if (head)
+	list_t *temp;
+
+	while (head)
 	{
-		free_list(head->next);
-		if (head->str)
-			free(head->str);
-		free(head);
+		temp = head;
+		head = head->next;
+		free(temp->str);
+		free(temp);
 	}
+
+	free(head);
 }
